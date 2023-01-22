@@ -1,0 +1,47 @@
+
+body{
+    background: #f6f6f6;
+    color: #05080c;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: sans-serif, Arial, Helvetica;
+    margin: 0;
+}
+
+body p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* bonus link color*/
+
+body a {
+    color: #0000EE;
+}
+
+header {
+    border-top: 5px solid #222222;
+    padding: 0 100px;
+}
+
+article {
+    border-bottom: 5px solid #222222;
+    padding: 0 100px;
+}
+
+article img {
+    float: right;
+    margin-left: 10px;
+}
+
+th {
+    background-color: #222222;
+    color:white;
+    padding: 10px;
+}
+
+td {
+background-color: #eeeeee;
+padding: 10px;
+}
+
+
