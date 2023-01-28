@@ -1,0 +1,38 @@
+nav {
+    background-color: black;
+    color: #ffff00;
+    border-bottom: 5px solid yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+}
+
+h1.logo {
+    padding-left: 40px;
+
+}
+
+ul {
+    display: flex;
+    align-self: center;
+    gap: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li.developers, .designers {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+

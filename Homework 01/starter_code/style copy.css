@@ -1,0 +1,30 @@
+body {
+    background-color: #f6f6f6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #05080c;
+    font-size: 18px;
+    line-height: 1.5;
+    border-bottom: 5px solid #222222;
+}
+
+/* map of Xia Dynasty*/
+
+p img {
+    float: right;
+    margin-left: 20px;
+}
+
+th {
+    background-color: #222222;
+    padding: 20px;
+    color: #ffffff;
+}
+
+td {
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+header {
+    border-top: 5px solid #222222;
+}
