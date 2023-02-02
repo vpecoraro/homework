@@ -1,6 +1,93 @@
 /* ################################################## */
 /* ########### Global classes / overrides ########### */
 /* ################################################## */
+
+/* Parent Container of Logo & Menu Items*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-bottom:5px solid #f2ff00;
+  padding: 10px 30px 10px 30px;
+}
+
+/* Startup Matchmaker Logo*/
+.logoTitle {
+  font-family: 'Merriweather', serif;
+  color: #f2ff00;
+  text-decoration: none;
+}
+
+/* Parent Box of List Items*/
+.navigationContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+/* Find Developers and Find Designers Text in Navigation Menu*/
+.findEmployees {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.listItems {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Grey banner with tagline*/
+.tagLine {
+  background-color: #adadad;
+  color: black;
+  font-family:'Lato', sans-serif;
+  padding: 15px;
+  font-size: 28px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Strikethrough text in Grey banner*/
+.strikethrough {
+  text-decoration-line: line-through;
+  text-decoration-color: black;
+}
+
+/* Underline text in Grey banner*/
+.underline {
+  text-decoration-line: underline;
+  text-decoration-color: #f2ff00;
+}
+
+/* Hero Image of People Working on Laptops */
+
+.heroSection {
+  display: flex;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg") center;
+  justify-content: flex-end;
+  background-size: cover;
+}
+
+
+
+.mainCTA {
+  background-color: rgba(255, 255, 255, .85);
+  margin: 40px;
+  padding: 40px;
+  max-width: 350px;
+}
+
+article h1 {
+  font-family: 'Merriweather', serif;
+  color: black;
+  font-size: 24px;
+}
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -9,8 +96,55 @@ p {
   font-size: 18px;
   line-height: 1.5;
   padding: 15px 0;
+  font-family:'Lato', sans-serif;
 }
 
+
+.bottomSection {
+  display: flex;
+  /* padding: 30px 25px 30px 25px; */
+  justify-content: space-around;
+}
+
+.CTA {
+  background-color: #adadad;
+  border-bottom: 2px solid #878787;
+  border-radius: 5px;
+  font-size: 24px;
+  color: black;
+  text-transform: uppercase;
+  padding: 5px 40px 5px 40px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+}
+
+.home-article-container {
+  border-right: 1px solid #adadad;
+  padding: 40px;
+  margin: 20px 0;
+}
+
+.home-article-container:last-child {
+  border-right: none;
+}
+
+.mainCTA .CTA {
+  background-color: #f2ff00;
+  border-bottom:2px solid #ffd900; 
+  max-width: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  padding-left: 30px;
+  margin-top: 40px;
+}
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
 .merriweather { font-family: 'Merriweather', serif; }
       .oswald { font-family: 'Oswald', sans-serif; }
