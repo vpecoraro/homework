@@ -1,4 +1,340 @@
-### Colors
+/* ### Colors
 Green: #20c063 / RGBA(32,192,99,1)
 Gray: #e8e9ea  / RGBA (232,233,234,1)
-Dark Text: #3b4144 / RGBA (59,65,68,1)
+Dark Text: #3b4144 / RGBA (59,65,68,1) */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    color: #222;
+}
+
+.truliaHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #20c063;
+    padding: 10px 10px 10px 25px;
+}
+
+.truliaNavLeft, .truliaNavRight {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.truliaNavLeft ul, .truliaNavRight ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.truliaNavLeft ul a , .truliaNavRight ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ .truliaLogo {
+    box-sizing: content-box;
+    width: 80px;
+    min-height: 100%;
+    vertical-align: middle;
+  }
+
+     .circle {
+    display: inline-block;
+    border: 2px solid white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 2.5px;
+    box-sizing: border-box;
+ } 
+
+
+  /* Homes For Sale & Real Estate in 20010 section */
+
+  .truliaResultsHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 30px;
+ }
+ .truliaResultsHeader h1 {
+  font-size: 14px;
+  font-weight: bolder;
+ }
+
+ /* MAIN SECTION */
+ .truliaMain {
+    background-color: #e8e9ea;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    gap: 15px;
+ }
+
+
+/* INDIVIDUAL HOUSE ARTICLE SECTIONS */
+ .truliaGridItem {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+ }
+
+
+ /* MLS House Picture Container*/
+ .truliaHouseImage {
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 5px 0 0;
+    height: 160px;
+    width: 100%;
+ }
+/* For Sale By Owner Banner */
+.highlight-FSBO {
+    background-color: RGBA(134, 144, 152, 0.45);
+    color: white;
+    font-size: 12px;
+    border-radius: 5px 0px 3px 0px;
+    padding: 2px;
+    text-transform: uppercase;
+}
+
+.highlight-NEW {
+    background-color: rgba(45, 191, 102, 0.70);
+    color: white;
+    font-size: 12px;
+    border-radius: 5px 1px 8px 0px;
+    padding: 2px 6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+ /* MLS House Pictures*/
+ .truliaHouseImage1 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage2 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage3 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage4 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage5 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage6 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage7 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg");
+    max-width: 100%;
+ }
+ 
+ .truliaHouseImage8 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage9 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage10 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage11 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg");
+    max-width: 100%;
+ }
+
+ .truliaHouseImage12 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg");
+    max-width: 100%;
+ }
+
+ /* Container holding all House Info (price, bed, bath, sqft, address)*/
+
+ .truliaHouseFacts {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    padding: 5px 0 20px 10px;
+    margin: 0;
+ }
+
+/* Trulia Price Increase Icon */
+ .truliaHouseFacts img{
+    max-height: 15px;
+ }
+
+ /* Price of House Box */
+ .truliaHousePrice {
+    display: flex;
+    align-items: center;
+ }
+
+ /* Price of House Text */
+ .truliaHousePrice h1 {
+    font-size: 16px;
+    margin: 0;
+    padding-top: 1px;
+ }
+
+ /* Bed, Bath, SQFT box */
+ .truliaHouseInfoList {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2px 0 2px 0;
+    gap: 10px;
+ }
+
+ /* Bedroom and Bath Icons */
+ .truliaHouseInfoList img {
+    max-height: 15px;
+    padding-right: 3px;
+ }
+
+ .truliaBedroomsListItem, .truliaBathsListItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+ /* Bed bath and sqft text */
+ .truliaHouseInfoList li {
+    font-size: 14px;
+ }
+
+ /* Address Text */
+ .truliaHouseAddress{
+    font-size: 14px;
+    color: #787d81;
+    font-style: normal;
+
+ }
+ /* TRULIA REAL ESTATE INSIGHTS SECTION */
+
+ /* don't forget to remove!! */
+ /* .zipcodeInsights {
+    background-color: #20c063;
+ } */
+
+ .zipcodeInsights {
+    margin: 40px 30px;
+ }
+
+ .zipcodeInsights h2 {
+    font-size: 20px;
+ }
+ a {
+    color: #20c063;
+    text-decoration: none;
+ }
+
+  /* Bottom Navigation/Breadcrumb Area*/
+
+.truliaBreadcrumbNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .pageNumbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .pageNumbers a {
+    color: #20c063;
+    font-size: 14px;
+  }
+
+
+p.results {
+    margin: 10px 0;
+    color: #787d81;
+    font-size: 14px;
+}
+  .breadcrumbs {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* Breadcrumb Hyperlinks */
+  .breadcrumbs a {
+    color: #20c063;
+    font-size: 14px;
+  }
+ 
+/* Dark Text: #3b4144 / RGBA (59,65,68,1)  */
+ /* Footer*/
+
+ footer {
+   background-color: #474E52;
+   padding: 10px 20px;
+ }
+
+ footer ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+    padding: 0px;
+ }
+
+ footer a {
+    font-size: 16px;
+    color: white;
+ }
+ footer p.truliaCopyright {
+    color: #b1b6bb;
+    font-size: 10px;
+    text-align: center;
+ }
+
