@@ -5,23 +5,39 @@
 // Create a function called `squared` that takes one argument
 // The function will return the argument times itself (the square of the number)
 
-function squared(namingStuff){
-    let mySquare = namingStuff * namingStuff;
-    return mySquare;
+function squared(toBeSquared) {
+    return toBeSquared * toBeSquared;
 }
 
+console.log(squared(4));
+console.log(squared(5));
+
+
+
+// BONUS: Check if the argument is a number first! (Hint: conditionals - if statements)
+
+/*
+function squared(numberToBeSquared) {
+    if (typeof numberToBeSquared == number) {
+        return numberToBeSquared * numberToBeSquared
+    } else {
+        return 0;
+    }
+}
 
 console.log(squared(2));
 console.log(squared(5));
 console.log(squared(-3));
-
-
-// BONUS: Check if the argument is a number first! (Hint: conditionals - if statements)
+*/
 
 // 2. Get string length!
 
 // Create a function called `stringLength` that returns the length of a string (how many characters?)
 // So: stringLength("hello") would return 5
+
+function stringLength(toBeMeasured) {
+    return toBeMeasured.length;
+}
 
 console.log(stringLength("testing"))
 console.log(stringLength("This is a longer string."))
@@ -31,13 +47,34 @@ console.log(stringLength("This is a longer string."))
 // Create a function called addNumbers
 // Takes two arguments and returns the sum of those arguments
 
-// console.log(addNumbers(4, 2));
-// console.log(addNumbers(6, 3));
+function addNumbers(number1, number2) {
+    return number1 + number2;
+}
 
-function sayHello
+console.log(addNumbers(4, 2));
+console.log(addNumbers(6, 3));
+
+// function sayHello
 // 4. Create a function called sayHello
 // Takes one argument
 // Returns a string that is the combination of "Hello, " + the argument passed into the function
 // So sayHello("Paul") would return "Hello, Paul";
 
+/*
+function sayHello(firstName) {
+    return "Hello, " + firstName;
+}
+console.log(sayHello("Paul"));
+
 // console.log(sayHello("Paul"));
+*/
+
+function sayHello(firstName) {
+    if (typeof firstName == "string") {
+        return "Hello, " + firstName;
+    } else {
+        return "Hello!";
+    }
+}
+console.log(sayHello("Paul"));
+console.log(sayHello(22));
