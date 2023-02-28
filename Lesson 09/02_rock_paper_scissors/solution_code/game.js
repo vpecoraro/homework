@@ -2,8 +2,8 @@
 function computerChoice() {
     let random = Math.random();
     if (random < 0.333) {
-        return  'rock';
-    } else if(random < 0.67777) {
+        return 'rock';
+    } else if (random < 0.67777) {
         return 'paper';
     } else {
         return 'scissors';
@@ -18,9 +18,9 @@ function compare(me, opponent) {
 
     document.querySelector('#computerSelection').innerText = opponent;
 
-    if(me===opponent){
+    if (me === opponent) {
         return 'Tie';
-    } else if(me === 'rock') {
+    } else if (me === 'rock') {
 
         if (opponent === 'paper') {
             return 'My rock lost to paper :(';
@@ -48,22 +48,22 @@ function compare(me, opponent) {
 };
 
 
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function (event) {
 
     // Bind a click event onto each of the three buttons.  It should run the compare function and then put the result to the #decsision id in the html
-    document.querySelector("#scissors").addEventListener('click', function(){
-  let result = compare('scissors', computerChoice());
-  document.querySelector("#decision").innerHTML = result;
-});
+    document.querySelector("#scissors").addEventListener('click', function () {
+        let result = compare('scissors', computerChoice());
+        document.querySelector("#decision").innerHTML = result;
+    });
 
-document.querySelector('#rock').addEventListener('click', function(){
-    let result = compare('rock', computerChoice());
-  document.querySelector("#decision").innerHTML = result;
-});
+    document.querySelector('#rock').addEventListener('click', function () {
+        let result = compare('rock', computerChoice());
+        document.querySelector("#decision").innerHTML = result;
+    });
 
-document.querySelector('#paper').addEventListener('click', function(){
-    let result = compare('paper', computerChoice());
-  document.querySelector("#decision").innerHTML = result;
-});
+    document.querySelector('#paper').addEventListener('click', function () {
+        let result = compare('paper', computerChoice());
+        document.querySelector("#decision").innerHTML = result;
+    });
 
 });

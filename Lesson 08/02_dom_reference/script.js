@@ -72,7 +72,7 @@ console.table() // outputs a table of data into the console
 
 // .classList returns an array of classes that are on an element
 const element = document.getElementById('your-id');
-element.classList; 
+element.classList;
 
 
 // tells you all kinds of thing about the URL of a webpage - try it out

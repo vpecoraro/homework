@@ -1,18 +1,71 @@
 // Try making the traffic light work - Think through the problem BEFORE you code!
 // You'll use addEventListener and getElementById if you're doing it right...
 
-//if "stop" #stopButton is clicked, turn first circle red #stopLight red
-//if "slow" is clicked, turn second circle yellow
-//if "go" is clocked, turn third button green
 
-// document.getElementById('grayButton').addEventListener('click',function(){
-//     //the color scheme of the page should change to more of a "dark mode" feel, with gray backgrounds and white text throughout.
-//     document.body.style.backgroundColor = "#555555";
-//     document.body.style.color = "#ffffff";
-    
-    
-//     })
 
-document.getElementById('stopButton').addEventListener('click',function(){
-    document.#stopLight.style.backgroundColor = "red";
+//how i did it
+
+/*
+let stopLight = document.getElementById("stopLight");
+let slowLight = document.getElementById("slowLight");
+let goLight = document.getElementById("goLight");
+
+document.querySelector("#stopButton").addEventListener("click", function () {
+    stopLight.classList.add("turnRed");
+    slowLight.classList.remove("turnYellow");
+    goLight.classList.remove("turnGreen");
+
 })
+
+
+
+document.querySelector("#slowButton").addEventListener("click", function () {
+    slowLight.classList.add("turnYellow");
+    stopLight.classList.remove("turnRed");
+    goLight.classList.remove("turnGreen");
+
+})
+
+
+
+document.querySelector("#goButton").addEventListener("click", function () {
+    goLight.classList.add("turnGreen");
+    stopLight.classList.remove("turnRed");
+    slowLight.classList.remove("turnYellow");
+
+})
+*/
+
+//solution code
+
+//event handlers for when buttons are clicked to run the functions above 
+document.getElementById("stopButton").addEventListener("click", stopLight);
+document.getElementById("slowButton").addEventListener("click", yellowLight);
+document.getElementById("goButton").addEventListener("click", goLight);
+
+
+//stopLight function adds red class. Removes yellow and green classes. 
+function stopLight() {
+    document.getElementById("stopLight").classList.add("red");
+    document.getElementById("slowLight").classList.remove("yellow");
+    document.getElementById("goLight").classList.remove("green");
+
+}
+
+
+//yellowLight turns on yellow light but turns off red and green
+function yellowLight() {
+    document.getElementById("stopLight").classList.remove("red");
+    document.getElementById("slowLight").classList.add("yellow");
+    document.getElementById("goLight").classList.remove("green");
+
+}
+
+//greenLight turns on green light but turns off red and yellow
+function goLight() {
+    document.getElementById("stopLight").classList.remove("red");
+    document.getElementById("slowLight").classList.remove("yellow");
+    document.getElementById("goLight").classList.add("green");
+
+}
+
